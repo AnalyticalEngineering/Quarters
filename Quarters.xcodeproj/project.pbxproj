@@ -14,6 +14,26 @@
 		127E83302B4C8DDA00E6D4E8 /* QuartersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E832F2B4C8DDA00E6D4E8 /* QuartersTests.swift */; };
 		127E833A2B4C8DDA00E6D4E8 /* QuartersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83392B4C8DDA00E6D4E8 /* QuartersUITests.swift */; };
 		127E833C2B4C8DDA00E6D4E8 /* QuartersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E833B2B4C8DDA00E6D4E8 /* QuartersUITestsLaunchTests.swift */; };
+		127E834D2B4C8ECF00E6D4E8 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E834C2B4C8ECF00E6D4E8 /* Tab.swift */; };
+		127E834F2B4C8EED00E6D4E8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E834E2B4C8EED00E6D4E8 /* Category.swift */; };
+		127E83512B4C8F1000E6D4E8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83502B4C8F1000E6D4E8 /* Transaction.swift */; };
+		127E83532B4C8F3600E6D4E8 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83522B4C8F3600E6D4E8 /* TintColor.swift */; };
+		127E83552B4C900F00E6D4E8 /* Recents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83542B4C900F00E6D4E8 /* Recents.swift */; };
+		127E83572B4C902B00E6D4E8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83562B4C902B00E6D4E8 /* Search.swift */; };
+		127E83592B4C904500E6D4E8 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83582B4C904500E6D4E8 /* Graph.swift */; };
+		127E835B2B4C906600E6D4E8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E835A2B4C906600E6D4E8 /* Settings.swift */; };
+		127E835D2B4C909200E6D4E8 /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E835C2B4C909200E6D4E8 /* IntroScreen.swift */; };
+		127E835F2B4C90B700E6D4E8 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E835E2B4C90B700E6D4E8 /* TransactionView.swift */; };
+		127E83612B4C912B00E6D4E8 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83602B4C912B00E6D4E8 /* LockView.swift */; };
+		127E83632B4C914E00E6D4E8 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83622B4C914E00E6D4E8 /* SwipeView.swift */; };
+		127E83652B4C916B00E6D4E8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83642B4C916B00E6D4E8 /* CardView.swift */; };
+		127E83672B4C919200E6D4E8 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83662B4C919200E6D4E8 /* TransactionCardView.swift */; };
+		127E83692B4C91B700E6D4E8 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83682B4C91B700E6D4E8 /* DateFilterView.swift */; };
+		127E836B2B4C91DA00E6D4E8 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E836A2B4C91DA00E6D4E8 /* FilterTransactionsView.swift */; };
+		127E836D2B4C920F00E6D4E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E836C2B4C920F00E6D4E8 /* Constants.swift */; };
+		127E836F2B4C923300E6D4E8 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E836E2B4C923300E6D4E8 /* View+Extensions.swift */; };
+		127E83712B4C925400E6D4E8 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83702B4C925400E6D4E8 /* Date+Extensions.swift */; };
+		127E83732B4F569600E6D4E8 /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83722B4F569600E6D4E8 /* NewExpenseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +65,26 @@
 		127E83352B4C8DDA00E6D4E8 /* QuartersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuartersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		127E83392B4C8DDA00E6D4E8 /* QuartersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuartersUITests.swift; sourceTree = "<group>"; };
 		127E833B2B4C8DDA00E6D4E8 /* QuartersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuartersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		127E834C2B4C8ECF00E6D4E8 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		127E834E2B4C8EED00E6D4E8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		127E83502B4C8F1000E6D4E8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		127E83522B4C8F3600E6D4E8 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
+		127E83542B4C900F00E6D4E8 /* Recents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents.swift; sourceTree = "<group>"; };
+		127E83562B4C902B00E6D4E8 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		127E83582B4C904500E6D4E8 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		127E835A2B4C906600E6D4E8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		127E835C2B4C909200E6D4E8 /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
+		127E835E2B4C90B700E6D4E8 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		127E83602B4C912B00E6D4E8 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		127E83622B4C914E00E6D4E8 /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		127E83642B4C916B00E6D4E8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		127E83662B4C919200E6D4E8 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		127E83682B4C91B700E6D4E8 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
+		127E836A2B4C91DA00E6D4E8 /* FilterTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
+		127E836C2B4C920F00E6D4E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		127E836E2B4C923300E6D4E8 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		127E83702B4C925400E6D4E8 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		127E83722B4F569600E6D4E8 /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +135,9 @@
 		127E831C2B4C8DD900E6D4E8 /* Quarters */ = {
 			isa = PBXGroup;
 			children = (
+				127E83482B4C8E5300E6D4E8 /* Helpers */,
+				127E83492B4C8E5E00E6D4E8 /* Models */,
+				127E834A2B4C8E6800E6D4E8 /* Views */,
 				127E831D2B4C8DD900E6D4E8 /* QuartersApp.swift */,
 				127E831F2B4C8DD900E6D4E8 /* ContentView.swift */,
 				127E83212B4C8DDA00E6D4E8 /* Assets.xcassets */,
@@ -127,6 +170,55 @@
 				127E833B2B4C8DDA00E6D4E8 /* QuartersUITestsLaunchTests.swift */,
 			);
 			path = QuartersUITests;
+			sourceTree = "<group>";
+		};
+		127E83482B4C8E5300E6D4E8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				127E83602B4C912B00E6D4E8 /* LockView.swift */,
+				127E83622B4C914E00E6D4E8 /* SwipeView.swift */,
+				127E83642B4C916B00E6D4E8 /* CardView.swift */,
+				127E83662B4C919200E6D4E8 /* TransactionCardView.swift */,
+				127E83682B4C91B700E6D4E8 /* DateFilterView.swift */,
+				127E836A2B4C91DA00E6D4E8 /* FilterTransactionsView.swift */,
+				127E836C2B4C920F00E6D4E8 /* Constants.swift */,
+				127E836E2B4C923300E6D4E8 /* View+Extensions.swift */,
+				127E83702B4C925400E6D4E8 /* Date+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		127E83492B4C8E5E00E6D4E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				127E834C2B4C8ECF00E6D4E8 /* Tab.swift */,
+				127E834E2B4C8EED00E6D4E8 /* Category.swift */,
+				127E83502B4C8F1000E6D4E8 /* Transaction.swift */,
+				127E83522B4C8F3600E6D4E8 /* TintColor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		127E834A2B4C8E6800E6D4E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				127E834B2B4C8E7600E6D4E8 /* TabViews */,
+				127E835C2B4C909200E6D4E8 /* IntroScreen.swift */,
+				127E835E2B4C90B700E6D4E8 /* TransactionView.swift */,
+				127E83722B4F569600E6D4E8 /* NewExpenseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		127E834B2B4C8E7600E6D4E8 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				127E83542B4C900F00E6D4E8 /* Recents.swift */,
+				127E83562B4C902B00E6D4E8 /* Search.swift */,
+				127E83582B4C904500E6D4E8 /* Graph.swift */,
+				127E835A2B4C906600E6D4E8 /* Settings.swift */,
+			);
+			path = TabViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +351,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127E834D2B4C8ECF00E6D4E8 /* Tab.swift in Sources */,
+				127E836D2B4C920F00E6D4E8 /* Constants.swift in Sources */,
+				127E83712B4C925400E6D4E8 /* Date+Extensions.swift in Sources */,
+				127E83552B4C900F00E6D4E8 /* Recents.swift in Sources */,
 				127E83202B4C8DD900E6D4E8 /* ContentView.swift in Sources */,
+				127E83632B4C914E00E6D4E8 /* SwipeView.swift in Sources */,
+				127E83652B4C916B00E6D4E8 /* CardView.swift in Sources */,
+				127E83692B4C91B700E6D4E8 /* DateFilterView.swift in Sources */,
 				127E831E2B4C8DD900E6D4E8 /* QuartersApp.swift in Sources */,
+				127E835B2B4C906600E6D4E8 /* Settings.swift in Sources */,
+				127E835F2B4C90B700E6D4E8 /* TransactionView.swift in Sources */,
+				127E835D2B4C909200E6D4E8 /* IntroScreen.swift in Sources */,
+				127E83732B4F569600E6D4E8 /* NewExpenseView.swift in Sources */,
+				127E834F2B4C8EED00E6D4E8 /* Category.swift in Sources */,
+				127E83572B4C902B00E6D4E8 /* Search.swift in Sources */,
+				127E83592B4C904500E6D4E8 /* Graph.swift in Sources */,
+				127E83612B4C912B00E6D4E8 /* LockView.swift in Sources */,
+				127E83532B4C8F3600E6D4E8 /* TintColor.swift in Sources */,
+				127E836B2B4C91DA00E6D4E8 /* FilterTransactionsView.swift in Sources */,
+				127E83512B4C8F1000E6D4E8 /* Transaction.swift in Sources */,
+				127E836F2B4C923300E6D4E8 /* View+Extensions.swift in Sources */,
+				127E83672B4C919200E6D4E8 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +536,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = DESCRIPTION;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +575,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = DESCRIPTION;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

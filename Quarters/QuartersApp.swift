@@ -13,5 +13,6 @@ struct QuartersApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Transaction.self])
     }
 }
