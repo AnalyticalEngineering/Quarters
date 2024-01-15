@@ -48,8 +48,8 @@ extension View {
         return locale.currencySymbol ?? ""
     }
     
-    func total(_ transactions: [Transaction], category: Category) -> Double {
-        return transactions.filter({ $0.category == category.rawValue }).reduce(Double.zero) { partialResult, transaction in
+    func total(_ transactions: [Transaction], transactionType: TransactionType) -> Double {
+        return transactions.filter({ $0.transactionType == transactionType.rawValue }).reduce(Double.zero) { partialResult, transaction in
             return partialResult + transaction.amount
         }
     }

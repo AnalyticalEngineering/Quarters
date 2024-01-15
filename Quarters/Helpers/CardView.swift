@@ -27,9 +27,9 @@ struct CardView: View {
                 .padding(.bottom, 25)
                 
                 HStack(spacing: 0) {
-                    ForEach(Category.allCases, id: \.rawValue) { category in
-                        let symbolImage = category == .income ? "arrow.down" : "arrow.up"
-                        let tint = category == .income ? Color.green : Color.red
+                    ForEach(TransactionType.allCases, id: \.rawValue) { transactionType in
+                        let symbolImage = transactionType == .income ? "arrow.down" : "arrow.up"
+                        let tint = transactionType == .income ? Color.green : Color.red
                         
                         HStack(spacing: 10) {
                             Image(systemName: symbolImage)
@@ -42,17 +42,17 @@ struct CardView: View {
                                 }
                             
                             VStack(alignment: .leading, spacing: 4) {
-                                Text(category.rawValue)
+                                Text(transactionType.rawValue)
                                     .font(.caption2)
                                     .foregroundStyle(.gray)
                                 
-                                Text(currencyString(category == .income ? income : expense, allowedDigits: 0))
+                                Text(currencyString(transactionType == .income ? income : expense, allowedDigits: 0))
                                     .font(.callout)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.primary)
                             }
                             
-                            if category == .income {
+                            if transactionType == .income {
                                 Spacer(minLength: 10)
                             }
                         }

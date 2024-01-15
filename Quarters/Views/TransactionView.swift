@@ -12,12 +12,17 @@ struct TransactionView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
     var editTransaction: Transaction?
+    /// Notification Properties
+    @AppStorage("enableNotifications") private var enableNotifications: Bool = false
+    @AppStorage("notificationAccess") private var isNotificationAccessGiven: NotificationState = .notDetermined
+    @State private var addRemainder: Bool = false
+    @State private var remainderID: String = ""
     /// View Properties
     @State private var title: String = ""
     @State private var remarks: String = ""
     @State private var amount: Double = .zero
     @State private var dateAdded: Date = .now
-    @State private var category: Category = .expense
+    @State private var transactionType: TransactionType = .expense
     /// Random Tint
     @State var tint: TintColor = tints.randomElement()!
     var body: some View {
@@ -34,7 +39,7 @@ struct TransactionView: View {
                     remarks: remarks.isEmpty ? "Remarks" : remarks,
                     amount: amount,
                     dateAdded: dateAdded,
-                    category: category,
+                    transactionType: transactionType,
                     tintColor: tint
                 ))
                 
@@ -44,7 +49,7 @@ struct TransactionView: View {
                 
                 /// Amount & Category Check Box
                 VStack(alignment: .leading, spacing: 10, content: {
-                    Text("Amount & Category")
+                    Text("Amount & TransactionType")
                         .font(.caption)
                         .foregroundStyle(.gray)
                         .hSpacing(.leading)
@@ -96,8 +101,8 @@ struct TransactionView: View {
                 title = editTransaction.title
                 remarks = editTransaction.remarks
                 dateAdded = editTransaction.dateAdded
-                if let category = editTransaction.rawCategory {
-                    self.category = category
+                if let transactionType = editTransaction.rawTransactionType {
+                    self.transactionType = transactionType
                 }
                 amount = editTransaction.amount
                 if let tint = editTransaction.tint {
@@ -114,10 +119,10 @@ struct TransactionView: View {
             editTransaction?.title = title
             editTransaction?.remarks = remarks
             editTransaction?.amount = amount
-            editTransaction?.category = category.rawValue
+            editTransaction?.transactionType = transactionType.rawValue
             editTransaction?.dateAdded = dateAdded
         } else {
-            let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
+            let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, transactionType: transactionType, tintColor: tint)
             context.insert(transaction)
         }
         
@@ -144,26 +149,26 @@ struct TransactionView: View {
     @ViewBuilder
     func CategoryCheckBox() -> some View {
         HStack(spacing: 10) {
-            ForEach(Category.allCases, id: \.rawValue) { category in
+            ForEach(TransactionType.allCases, id: \.rawValue) { transactionType in
                 HStack(spacing: 5) {
                     ZStack {
                         Image(systemName: "circle")
                             .font(.title3)
                             .foregroundStyle(appTint)
                         
-                        if self.category == category {
+                        if self.transactionType == transactionType {
                             Image(systemName: "circle.fill")
                                 .font(.caption)
                                 .foregroundStyle(appTint)
                         }
                     }
                     
-                    Text(category.rawValue)
+                    Text(transactionType.rawValue)
                         .font(.caption)
                 }
                 .contentShape(.rect)
                 .onTapGesture {
-                    self.category = category
+                    self.transactionType = transactionType
                 }
             }
         }

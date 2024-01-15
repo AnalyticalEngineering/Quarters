@@ -15,7 +15,7 @@ struct Recents: View {
     @State private var startDate: Date = .now.startOfMonth
     @State private var endDate: Date = .now.endOfMonth
     @State private var showFilterView: Bool = false
-    @State private var selectedCategory: Category = .expense
+    @State private var selectedTransactionType: TransactionType = .expense
     /// For Animation
     @Namespace private var animation
     var body: some View {
@@ -40,15 +40,15 @@ struct Recents: View {
                             FilterTransactionsView(startDate: startDate, endDate: endDate) { transactions in
                                 /// Card View
                                 CardView(
-                                    income: total(transactions, category: .income),
-                                    expense: total(transactions, category: .expense)
+                                    income: total(transactions, transactionType: .income),
+                                    expense: total(transactions, transactionType: .expense)
                                 )
                                 
                                 /// Custom Segmented Control
                                 CustomSegmentedControl()
                                     .padding(.bottom, 10)
                                 
-                                ForEach(transactions.filter({ $0.category == selectedCategory.rawValue })) { transaction in
+                                ForEach(transactions.filter({ $0.transactionType == selectedTransactionType.rawValue })) { transaction in
                                     NavigationLink(value: transaction) {
                                         TransactionCardView(transaction: transaction)
                                     }
@@ -106,7 +106,7 @@ struct Recents: View {
             Spacer(minLength: 0)
             
             NavigationLink {
-                TransactionView()
+               TransactionView()
             } label: {
                 Image(systemName: "plus")
                     .font(.title3)
@@ -138,12 +138,12 @@ struct Recents: View {
     @ViewBuilder
     func CustomSegmentedControl() -> some View {
         HStack(spacing: 0) {
-            ForEach(Category.allCases, id: \.rawValue) { category in
-                Text(category.rawValue)
+            ForEach(TransactionType.allCases, id: \.rawValue) { transactionType in
+                Text(transactionType.rawValue)
                     .hSpacing()
                     .padding(.vertical, 10)
                     .background {
-                        if category == selectedCategory {
+                        if transactionType == selectedTransactionType {
                             Capsule()
                                 .fill(.background)
                                 .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
@@ -152,7 +152,7 @@ struct Recents: View {
                     .contentShape(.capsule)
                     .onTapGesture {
                         withAnimation(.snappy) {
-                            selectedCategory = category
+                            selectedTransactionType = transactionType
                         }
                     }
             }

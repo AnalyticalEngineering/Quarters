@@ -15,15 +15,15 @@ class Transaction {
     var remarks: String
     var amount: Double
     var dateAdded: Date
-    var category: String
+    var transactionType: String
     var tintColor: String
     
-    init(title: String, remarks: String, amount: Double, dateAdded: Date, category: Category, tintColor: TintColor) {
+    init(title: String, remarks: String, amount: Double, dateAdded: Date, transactionType: TransactionType, tintColor: TintColor) {
         self.title = title
         self.remarks = remarks
         self.amount = amount
         self.dateAdded = dateAdded
-        self.category = category.rawValue
+        self.transactionType = transactionType.rawValue
         self.tintColor = tintColor.color
     }
     
@@ -39,7 +39,7 @@ class Transaction {
     }
     
     @Transient
-    var rawCategory: Category? {
-        return Category.allCases.first(where: { category == $0.rawValue })
+    var rawTransactionType: TransactionType? {
+        return TransactionType.allCases.first(where: { transactionType == $0.rawValue })
     }
 }

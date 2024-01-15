@@ -12,18 +12,18 @@ struct Search: View {
     /// View Properties
     @State private var searchText: String = ""
     @State private var filterText: String = ""
-    @State private var selectedCategory: Category? = nil
+    @State private var selectedTransactionType: TransactionType? = nil
     let searchPublisher = PassthroughSubject<String, Never>()
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
                 LazyVStack(spacing: 12) {
-                    FilterTransactionsView(category: selectedCategory, searchText: filterText) { transactions in
+                    FilterTransactionsView(transactionType: selectedTransactionType, searchText: filterText) { transactions in
                         ForEach(transactions) { transaction in
                             NavigationLink {
                                 TransactionView(editTransaction: transaction)
                             } label: {
-                                TransactionCardView(transaction: transaction, showsCategory: true)
+                                TransactionCardView(transaction: transaction, showsTransactionType: true)
                             }
                             .buttonStyle(.plain)
                         }
@@ -59,25 +59,25 @@ struct Search: View {
     func ToolBarContent() -> some View {
         Menu {
             Button {
-                selectedCategory = nil
+                selectedTransactionType = nil
             } label: {
                 HStack {
                     Text("Both")
                     
-                    if selectedCategory == nil {
+                    if selectedTransactionType == nil {
                         Image(systemName: "checkmark")
                     }
                 }
             }
             
-            ForEach(Category.allCases, id: \.rawValue) { category in
+            ForEach(TransactionType.allCases, id: \.rawValue) { transactionType in
                 Button {
-                    selectedCategory = category
+                    selectedTransactionType = transactionType
                 } label: {
                     HStack {
-                        Text(category.rawValue)
+                        Text(transactionType.rawValue)
                         
-                        if selectedCategory == category {
+                        if selectedTransactionType == transactionType {
                             Image(systemName: "checkmark")
                         }
                     }
