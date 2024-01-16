@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     /// Intro Visibility Status
-    @AppStorage("isFirstTime") private var isFirstTime: Bool = false
+    @AppStorage("isFirstTime") private var isFirstTime: Bool = true
     /// App Lock Properties
-    @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = true
+    @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = false
     /// Active Tab
     @State private var activeTab: Tab = .recents

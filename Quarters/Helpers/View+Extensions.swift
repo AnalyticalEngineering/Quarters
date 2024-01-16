@@ -50,8 +50,12 @@ extension View {
     }
     
     func total(_ transactions: [Transaction], transactionType: TransactionType) -> Double {
-        return transactions.filter({ $0.transactionType == transactionType.rawValue }).reduce(Double.zero) { partialResult, transaction in
+        return transactions.lazy.filter({ $0.transactionType == transactionType.rawValue }).lazy.reduce(Double.zero) { partialResult, transaction in
             return partialResult + transaction.amount
         }
+    }
+    
+    var appTint: Color {
+        return Constants.shared.tintColor
     }
 }

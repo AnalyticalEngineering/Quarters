@@ -61,6 +61,3 @@ struct TransactionCardView: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
