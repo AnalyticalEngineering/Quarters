@@ -189,7 +189,7 @@ struct TransactionView: View {
 }
 
 #Preview {
-    NavigationStack {
-        ContentView()
+  
+        TransactionView()
     }
-}
+

@@ -44,7 +44,7 @@ struct Graphs: View {
                 }
                 .padding(15)
             }
-            .navigationTitle("Graphs")
+            .navigationTitle("Tracking Metrics")
             .background(.gray.opacity(0.15))
             .overlay {
                 if chartGroups.isEmpty && !isLoading {
@@ -212,7 +212,6 @@ struct ListOfExpenses: View {
         }
     }
 }
-
 #Preview {
     Graphs()
 }

@@ -18,11 +18,14 @@ struct Search: View {
         NavigationStack {
             ScrollView(.vertical) {
                 LazyVStack(spacing: 12) {
+                    //Filter Transaction View
                     FilterTransactionsView(transactionType: selectedTransactionType, searchText: filterText) { transactions in
                         ForEach(transactions) { transaction in
                             NavigationLink {
+                                // Transaction View
                                 TransactionView(editTransaction: transaction)
                             } label: {
+                                //Transaction Card View
                                 TransactionCardView(transaction: transaction, showsTransactionType: true)
                             }
                             .buttonStyle(.plain)

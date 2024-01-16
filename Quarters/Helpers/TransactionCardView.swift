@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TransactionCardView: View {
+    //MARK:  PROPERTIES
     @Environment(\.modelContext) private var context
     var transaction: Transaction
     var showsTransactionType: Bool = false
     var body: some View {
+        
         SwipeAction(cornerRadius: 10, direction: .trailing) {
             HStack(spacing: 12) {
                 Text("\(String(transaction.title.prefix(1)))")

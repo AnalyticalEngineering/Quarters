@@ -36,7 +36,7 @@ struct Recents: View {
                                     .foregroundStyle(.gray)
                             })
                             .hSpacing(.leading)
-                            
+                            //Filter Transactions View
                             FilterTransactionsView(startDate: startDate, endDate: endDate) { transactions in
                                 /// Card View
                                 CardView(
@@ -65,6 +65,7 @@ struct Recents: View {
                 .blur(radius: showFilterView ? 8 : 0)
                 .disabled(showFilterView)
                 .navigationDestination(for: Transaction.self) { transaction in
+                    //Transaction View
                     TransactionView(editTransaction: transaction)
                 }
             }

@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126B071F2B5705B900E70D86 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126B071E2B5705B900E70D86 /* WidgetKit.framework */; };
+		126B07212B5705B900E70D86 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126B07202B5705B900E70D86 /* SwiftUI.framework */; };
+		126B07242B5705B900E70D86 /* StatsCardViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B07232B5705B900E70D86 /* StatsCardViewBundle.swift */; };
+		126B07262B5705B900E70D86 /* StatsCardViewLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B07252B5705B900E70D86 /* StatsCardViewLiveActivity.swift */; };
+		126B07282B5705B900E70D86 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B07272B5705B900E70D86 /* StatsCardView.swift */; };
+		126B072A2B5705B900E70D86 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B07292B5705B900E70D86 /* AppIntent.swift */; };
+		126B072C2B5705BB00E70D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126B072B2B5705BB00E70D86 /* Assets.xcassets */; };
+		126B07302B5705BB00E70D86 /* StatsCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 126B071C2B5705B900E70D86 /* StatsCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		126B07352B572D9100E70D86 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E836A2B4C91DA00E6D4E8 /* FilterTransactionsView.swift */; };
+		126B07362B572DBE00E70D86 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83702B4C925400E6D4E8 /* Date+Extensions.swift */; };
+		126B07372B572DF800E70D86 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E836E2B4C923300E6D4E8 /* View+Extensions.swift */; };
+		126B07392B572E2B00E70D86 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83642B4C916B00E6D4E8 /* CardView.swift */; };
+		126B073B2B572E5300E70D86 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83502B4C8F1000E6D4E8 /* Transaction.swift */; };
+		126B073C2B572E5700E70D86 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E834E2B4C8EED00E6D4E8 /* TransactionType.swift */; };
+		126B07402B572ECD00E70D86 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E83522B4C8F3600E6D4E8 /* TintColor.swift */; };
+		126B07432B572EEF00E70D86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E836C2B4C920F00E6D4E8 /* Constants.swift */; };
 		127E831E2B4C8DD900E6D4E8 /* QuartersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E831D2B4C8DD900E6D4E8 /* QuartersApp.swift */; };
 		127E83202B4C8DD900E6D4E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E831F2B4C8DD900E6D4E8 /* ContentView.swift */; };
 		127E83222B4C8DDA00E6D4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127E83212B4C8DDA00E6D4E8 /* Assets.xcassets */; };
@@ -39,6 +55,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		126B072E2B5705BB00E70D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 127E83122B4C8DD900E6D4E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 126B071B2B5705B900E70D86;
+			remoteInfo = StatsCardViewExtension;
+		};
 		127E832C2B4C8DDA00E6D4E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 127E83122B4C8DD900E6D4E8 /* Project object */;
@@ -55,7 +78,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		126B07312B5705BB00E70D86 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				126B07302B5705BB00E70D86 /* StatsCardViewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		126B071C2B5705B900E70D86 /* StatsCardViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsCardViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		126B071E2B5705B900E70D86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		126B07202B5705B900E70D86 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		126B07232B5705B900E70D86 /* StatsCardViewBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardViewBundle.swift; sourceTree = "<group>"; };
+		126B07252B5705B900E70D86 /* StatsCardViewLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardViewLiveActivity.swift; sourceTree = "<group>"; };
+		126B07272B5705B900E70D86 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
+		126B07292B5705B900E70D86 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		126B072B2B5705BB00E70D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		126B072D2B5705BB00E70D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127E831A2B4C8DD900E6D4E8 /* Quarters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quarters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127E831D2B4C8DD900E6D4E8 /* QuartersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuartersApp.swift; sourceTree = "<group>"; };
 		127E831F2B4C8DD900E6D4E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +138,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		126B07192B5705B900E70D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126B07212B5705B900E70D86 /* SwiftUI.framework in Frameworks */,
+				126B071F2B5705B900E70D86 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		127E83172B4C8DD900E6D4E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -116,12 +171,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126B071D2B5705B900E70D86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				126B071E2B5705B900E70D86 /* WidgetKit.framework */,
+				126B07202B5705B900E70D86 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		126B07222B5705B900E70D86 /* StatsCardView */ = {
+			isa = PBXGroup;
+			children = (
+				126B07232B5705B900E70D86 /* StatsCardViewBundle.swift */,
+				126B07252B5705B900E70D86 /* StatsCardViewLiveActivity.swift */,
+				126B07272B5705B900E70D86 /* StatsCardView.swift */,
+				126B07292B5705B900E70D86 /* AppIntent.swift */,
+				126B072B2B5705BB00E70D86 /* Assets.xcassets */,
+				126B072D2B5705BB00E70D86 /* Info.plist */,
+			);
+			path = StatsCardView;
+			sourceTree = "<group>";
+		};
 		127E83112B4C8DD900E6D4E8 = {
 			isa = PBXGroup;
 			children = (
 				127E831C2B4C8DD900E6D4E8 /* Quarters */,
 				127E832E2B4C8DDA00E6D4E8 /* QuartersTests */,
 				127E83382B4C8DDA00E6D4E8 /* QuartersUITests */,
+				126B07222B5705B900E70D86 /* StatsCardView */,
+				126B071D2B5705B900E70D86 /* Frameworks */,
 				127E831B2B4C8DD900E6D4E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +211,7 @@
 				127E831A2B4C8DD900E6D4E8 /* Quarters.app */,
 				127E832B2B4C8DDA00E6D4E8 /* QuartersTests.xctest */,
 				127E83352B4C8DDA00E6D4E8 /* QuartersUITests.xctest */,
+				126B071C2B5705B900E70D86 /* StatsCardViewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +310,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		126B071B2B5705B900E70D86 /* StatsCardViewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 126B07342B5705BB00E70D86 /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */;
+			buildPhases = (
+				126B07182B5705B900E70D86 /* Sources */,
+				126B07192B5705B900E70D86 /* Frameworks */,
+				126B071A2B5705B900E70D86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatsCardViewExtension;
+			productName = StatsCardViewExtension;
+			productReference = 126B071C2B5705B900E70D86 /* StatsCardViewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		127E83192B4C8DD900E6D4E8 /* Quarters */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 127E833F2B4C8DDA00E6D4E8 /* Build configuration list for PBXNativeTarget "Quarters" */;
@@ -237,10 +334,12 @@
 				127E83162B4C8DD900E6D4E8 /* Sources */,
 				127E83172B4C8DD900E6D4E8 /* Frameworks */,
 				127E83182B4C8DD900E6D4E8 /* Resources */,
+				126B07312B5705BB00E70D86 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				126B072F2B5705BB00E70D86 /* PBXTargetDependency */,
 			);
 			name = Quarters;
 			productName = Quarters;
@@ -293,6 +392,9 @@
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					126B071B2B5705B900E70D86 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					127E83192B4C8DD900E6D4E8 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -322,11 +424,20 @@
 				127E83192B4C8DD900E6D4E8 /* Quarters */,
 				127E832A2B4C8DDA00E6D4E8 /* QuartersTests */,
 				127E83342B4C8DDA00E6D4E8 /* QuartersUITests */,
+				126B071B2B5705B900E70D86 /* StatsCardViewExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		126B071A2B5705B900E70D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126B072C2B5705BB00E70D86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		127E83182B4C8DD900E6D4E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +464,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		126B07182B5705B900E70D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126B073B2B572E5300E70D86 /* Transaction.swift in Sources */,
+				126B07432B572EEF00E70D86 /* Constants.swift in Sources */,
+				126B07282B5705B900E70D86 /* StatsCardView.swift in Sources */,
+				126B07392B572E2B00E70D86 /* CardView.swift in Sources */,
+				126B073C2B572E5700E70D86 /* TransactionType.swift in Sources */,
+				126B072A2B5705B900E70D86 /* AppIntent.swift in Sources */,
+				126B07402B572ECD00E70D86 /* TintColor.swift in Sources */,
+				126B07242B5705B900E70D86 /* StatsCardViewBundle.swift in Sources */,
+				126B07372B572DF800E70D86 /* View+Extensions.swift in Sources */,
+				126B07262B5705B900E70D86 /* StatsCardViewLiveActivity.swift in Sources */,
+				126B07352B572D9100E70D86 /* FilterTransactionsView.swift in Sources */,
+				126B07362B572DBE00E70D86 /* Date+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		127E83162B4C8DD900E6D4E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +534,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		126B072F2B5705BB00E70D86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 126B071B2B5705B900E70D86 /* StatsCardViewExtension */;
+			targetProxy = 126B072E2B5705BB00E70D86 /* PBXContainerItemProxy */;
+		};
 		127E832D2B4C8DDA00E6D4E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 127E83192B4C8DD900E6D4E8 /* Quarters */;
@@ -417,6 +552,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		126B07322B5705BB00E70D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8QQYNTY523;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weldtactics.Quarters.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		126B07332B5705BB00E70D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8QQYNTY523;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weldtactics.Quarters.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		127E833D2B4C8DDA00E6D4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -534,6 +728,7 @@
 		127E83402B4C8DDA00E6D4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quarters/Quarters.entitlements;
@@ -573,6 +768,7 @@
 		127E83412B4C8DDA00E6D4E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quarters/Quarters.entitlements;
@@ -702,6 +898,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		126B07342B5705BB00E70D86 /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				126B07322B5705BB00E70D86 /* Debug */,
+				126B07332B5705BB00E70D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		127E83152B4C8DD900E6D4E8 /* Build configuration list for PBXProject "Quarters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
