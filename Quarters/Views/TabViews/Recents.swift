@@ -61,7 +61,6 @@ struct Recents: View {
                     }
                     .padding(15)
                 }
-                .background(.gray.opacity(0.15))
                 .blur(radius: showFilterView ? 8 : 0)
                 .disabled(showFilterView)
                 .navigationDestination(for: Transaction.self) { transaction in
@@ -146,7 +145,7 @@ struct Recents: View {
                     .background {
                         if transactionType == selectedTransactionType {
                             Capsule()
-                                .fill(.background)
+                                .fill(appTint.gradient)
                                 .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
                         }
                     }

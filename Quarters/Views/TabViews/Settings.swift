@@ -59,7 +59,7 @@ struct Settings: View {
                                     .overlay {
                                         if Constants.shared.appTint == tint.color {
                                             Circle()
-                                                .stroke(.primary, lineWidth: 1)
+                                                .stroke(.primary, lineWidth: 2)
                                                 .padding(-2)
                                         }
                                     }
@@ -71,20 +71,6 @@ struct Settings: View {
                             }
                         }
                         .padding(5)
-                    }
-                }
-                
-                Section("Appearance") {
-                    HStack(spacing: 0) {
-                        Button("Change Theme") {
-                            changeTheme.toggle()
-                        }
-                        
-                        Spacer()
-                        
-                        Text(userTheme.rawValue)
-                            .font(.caption2)
-                            .foregroundStyle(.gray)
                     }
                 }
                 
@@ -119,8 +105,10 @@ struct Settings: View {
                     Button("Export", action: exportTransactions)
                 }
             }
-            .navigationTitle("Settings")
+        
+           .navigationTitle("Settings")
         }
+      
         /// For Exporting Expneses as JSON File
         .sheet(isPresented: $presentShareSheet) {
             deleteTempFile()
@@ -150,12 +138,6 @@ struct Settings: View {
         }
         /// Theme Picker
         .preferredColorScheme(userTheme.colorScheme)
-        .sheet(isPresented: $changeTheme, content: {
-            ThemeChangeView(scheme: scheme)
-                /// Since Max Height is 410
-                .presentationDetents([.height(410)])
-                .presentationBackground(.clear)
-        })
         .toolbar(isLoading ? .hidden : .visible, for: .tabBar)
         .onChange(of: enableNotifications, initial: true) { _, newValue in
             if newValue {

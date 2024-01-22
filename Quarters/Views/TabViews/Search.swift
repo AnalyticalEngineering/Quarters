@@ -49,7 +49,6 @@ struct Search: View {
             })
             .searchable(text: $searchText)
             .navigationTitle("Search")
-            .background(.gray.opacity(0.15))
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     ToolBarContent()

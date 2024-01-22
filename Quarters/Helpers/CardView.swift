@@ -13,8 +13,7 @@ struct CardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15)
-                .fill(.background)
-            
+                .fill(.gray.opacity(0.2))
             VStack(spacing: 0) {
                 HStack(spacing: 12) {
                     Text("\(currencyString(income - expense))")

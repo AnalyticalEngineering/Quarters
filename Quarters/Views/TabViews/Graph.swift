@@ -45,7 +45,6 @@ struct Graphs: View {
                 .padding(15)
             }
             .navigationTitle("Tracking Metrics")
-            .background(.gray.opacity(0.15))
             .overlay {
                 if chartGroups.isEmpty && !isLoading {
                     ContentUnavailableView("No Transactions Found", systemImage: "xmark.seal")
